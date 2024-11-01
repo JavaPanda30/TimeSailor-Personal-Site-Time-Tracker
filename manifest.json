@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Website Timer Tracker",
+  "version": "1.0",
+  "description": "Track time spent on websites and visualize it with a pie chart.",
+  "action": {
+    "default_popup": "popup.html", 
+    "default_icon": {
+      "16": "image.png"
+    }
+  },
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
