@@ -1,34 +1,86 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #003366, #e0f7fa); /* Ocean blue gradient */
-  background: url("./background.jpg") no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  padding: 20px;
-  width: 450px;
-  height: 100vh;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+*{
+  font-family: oldenburg;
+  scrollbar-width:none;
+}
+.oldenburg-regular {
+  font-family: "Oldenburg", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: black;
+}
+  body {
+    background-size: cover;
+    padding: 20px;
+    width: 499px;
+    height: 93vh;
+    margin: 0 auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+.container {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  text-align: center;
+  color: #0ee8e1; 
+}
+h4{
+  font-size: 11px;
 }
 
-h1,h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  color: #0bce73; 
+select {
+  color: #0ee8e1; 
+  border: 0px;
+  padding: 0px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  appearance: none;
+  outline: none;
+}
+select:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+select:focus {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+option{
+  background-color: transparent; 
+  color: #000;
+}
+h3 {
+  color: #086562; 
 }
 h1{
-  font-size: 2.5em;
+  color: #0ee8e1; 
+  font-size: 1.5em;
   text-align: center;
+}
+
+body.gradient {
+  background: linear-gradient(to bottom, #003366, #e0f7fa);
+}
+
+body.image1 {
+  background: url("./background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.image2 {
+  background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRlbnJmOW54aDYwcWtyZjM2aDRsa3F0bGZxZWcyZDU2N3VnaHBkNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/s0go9ywxjJg4w/giphy.webp") no-repeat center center fixed;
+  background-size: cover;
 }
 
 #timeChart {
   max-width: 350px;
-  max-height: 350px;
+  max-height: 250px;
   margin: 20px auto;
   padding: 5px;
   display: block;
-  border: 2px solid #00bfff; 
+  border: 2px solid #509ab2; 
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1); 
 }
@@ -38,8 +90,8 @@ h1{
   padding: 0;
   margin-top: 10px;
   max-height: 150px; 
-  overflow-y: auto; 
-  scrollbar-width: thin; 
+  overflow-y: auto;
+  scrollbar-width:none 
 }
 
 #timeList li {
@@ -47,45 +99,22 @@ h1{
   margin-bottom: 8px;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #00bfff; 
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(214, 206, 206, 0.1);
   font-size: 16px;
   display: flex;
   justify-content: space-between;
   transition: background-color 0.3s, transform 0.2s;
 }
 
-#timeList li:hover {
-  background: rgba(255, 255, 255, 0.3); 
-  transform: scale(1.01);
-}
 
 #timeList li span.domain {
   font-weight: bold;
-  color: #055d7a; 
+  color: #044a62; 
 }
 
 #timeList li span.time {
   color: #055d7a; 
-}
-
-#resetButton {
-  background-color: #0099cc; 
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 100%;
-  margin-top: 15px;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-#resetButton:hover {
-  background-color: #0077b3;
-  transform: scale(1.05); 
 }
 
 #timeList::-webkit-scrollbar {
@@ -102,6 +131,6 @@ h1{
 }
 
 li {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:oldenburg;
 }
 
