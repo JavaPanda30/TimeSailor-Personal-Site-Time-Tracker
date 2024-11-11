@@ -40,8 +40,6 @@ The extension should now be installed and ready to use.
 
 ## Screenshots
 
-Include some screenshots of your extension in action to give users a preview of the UI and features. You can take screenshots of the popup interface, the pie chart, and the settings if applicable.
-
 ![Popup Interface](https://github.com/user-attachments/assets/4d960315-46a8-46b4-b4e0-9641ea8ed6c1)
 ![On Screen Popup Size](https://github.com/user-attachments/assets/1ffa9701-baf7-43af-a1ff-aab1c2fe400d)
 
